@@ -1,0 +1,33 @@
+
+- Création de la **base de données** `BlogDB`.
+
+- Sélection de la base de données avec `USE BlogDB`.
+
+- Création de la table **Utilisateur** avec :
+
+  * une clé primaire auto-incrémentée (`id`),
+  * un nom obligatoire,
+  * un email unique,
+  * un mot de passe obligatoire.
+
+- Création de la table **Article** contenant :
+
+  * les informations de l’article (titre, contenu, date de publication),
+  * une clé étrangère (`id_utilisateur`) reliant chaque article à un utilisateur
+    → relation **1 utilisateur – plusieurs articles**.
+
+- Création de la table **Commentaire** contenant :
+
+  * le contenu et les informations du commentaire,
+  * une clé étrangère (`id_article`) reliant chaque commentaire à un article
+    → relation **1 article – plusieurs commentaires**.
+
+- Utilisation des **clés étrangères** pour assurer l’intégrité des relations entre les tables.
+
+- Vérification de la création des tables avec `SHOW TABLES`.
+
+- Insertion d’un **utilisateur de test** pour valider le fonctionnement.
+
+- Ajout d’un **index** sur le champ `email` pour améliorer les performances de recherche.
+
+- Ajout d’un **commentaire descriptif** sur la table `Utilisateur` pour documenter la base de données.
