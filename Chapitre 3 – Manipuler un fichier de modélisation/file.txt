@@ -1,0 +1,44 @@
+🔹 Étape 1 : outil de modélisation
+
+Utilisation de Draw.io en ligne.
+
+
+🔹 Étape 2 : Créer les entités
+
+Création des entités suivantes :
+
+-Utilisateur
+
+-Article
+
+-Commentaire
+
+-Ajout des attributs pour chaque entité
+(id, nom, email, etc.).
+
+
+🔹 Étape 3 : Définir les relations
+
+-Définition des relations entre les entités :
+
+-Utilisateur — rédige — Article (1–N)
+
+-Article — reçoit — Commentaire (1–N)
+
+==>Indication des cardinalités (1 et N).
+
+
+🔹 Étape 4 : Exporter le MCD
+
+-Sauvegarde du fichier au format .loop ou .drawio.
+
+-Exportation du MCD sous forme d’image PNG pour la documentation.
+
+
+🔹 Étape 5 : (Optionnel) Générer le MLD
+
+Utilisation des fonctionnalités de l’outil pour :
+
+-Générer le MLD,
+
+-Exporter un script SQL à partir du modèle.

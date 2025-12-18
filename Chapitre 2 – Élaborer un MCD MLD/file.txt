@@ -1,0 +1,23 @@
+MLD UTILISATEUR{
+ id_user (PK),
+ nom,
+ email,
+ mot_de_passe 
+ }
+
+MLD ARTICLE{
+id_article (PK),
+titre,
+contenu,
+date_pub,
+id_user (FK)
+}
+
+MLD COMMENTAIRE{
+ id_commentaire (PK),
+ contenu,
+ auteur,
+ date,
+ id_article (FK)
+}
+
