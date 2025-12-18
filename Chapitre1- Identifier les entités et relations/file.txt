@@ -1,0 +1,44 @@
+Identification des entités {
+    -Utilisateur
+
+    -Article
+
+    -Commentaire
+}
+
+Identification des attributs {
+    -Utilisateur : (id, nom, email, rôle)
+
+    -Article : (id, titre, contenu, date_pub)
+
+    -Commentaire : (id, contenu, auteur, date)
+}
+
+Identification des relations {
+
+   -Utilisateur → Article : Un utilisateur peut rédiger plusieurs articles
+
+   -Article → Commentaire : Un article peut recevoir plusieurs commentaires
+
+      exemple : -Appartient à un article (N–1)
+                -Reçoit des commentaires (1–N)
+                -Rédige des articles (1–N)
+}
+
+Identification de cardinalités {
+
+    -Cardinalité (1–1) : Utilisateur ↔ Profil
+    -Cardinalité (1–N) : Utilisateur → Article
+    -Cardinalité (N–1) : Commentaire → Article
+    -Cardinalité (N–N) : Étudiant ↔ Module
+    -Cardinalités avec minimum (N-0) : Un utilisateur peut ne rédiger aucun article (0)
+                                       Ou en rédiger plusieurs (N).
+
+Résumé : 0 : participation facultative
+
+         1 : participation obligatoire
+
+         N : plusieurs occurrences possibles
+
+Ces cardinalités sont utilisées dans le MCD (Merise) pour bien définir les règles de gestion d’une base de données.
+}
