@@ -1,0 +1,68 @@
+(1)- MCD – Modèle Conceptuel de Données 
+
+🔹 Entités et attributs
+
+-UTILISATEUR:
+
+     id_utilisateur
+     nom
+     email
+     mot_de_passe
+
+-ARTICLE:
+
+     id_article
+     titre
+     contenu
+     date_publication
+
+-COMMENTAIRE:
+
+     id_commentaire
+     contenu
+     auteur
+     date_commentaire
+
+🔹 Relations
+
+-UTILISATEUR — écrit — ARTICLE
+
+     1 utilisateur peut écrire plusieurs articles
+     1 article est écrit par un seul utilisateur
+
+-ARTICLE — reçoit — COMMENTAIRE
+
+     1 article peut recevoir plusieurs commentaires
+     1 commentaire appartient à un seul article
+
+🔹 Cardinalités (MCD)
+
+-UTILISATEUR (1) -----> (N) ARTICLE (1,1) 
+-ARTICLE (1) -----> (N) COMMENTAIRE (1,1) 
+
+(2)- MLD – Modèle Logique de Données
+
+🔹 Tables et clés
+
+-UTILISATEUR
+
+     id_utilisateur (PK)
+     nom
+     email
+     mot_de_passe
+
+-ARTICLE
+
+     id_article (PK)
+     titre
+     contenu
+     date_publication
+     id_utilisateur (FK → UTILISATEUR.id_utilisateur)
+
+-COMMENTAIRE
+
+     id_commentaire (PK)
+     contenu
+     auteur
+     date_commentaire
+     id_article (FK → ARTICLE.id_article)

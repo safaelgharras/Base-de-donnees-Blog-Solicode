@@ -1,4 +1,3 @@
-
 - Création de la **base de données** `BlogDB`.
 
 - Sélection de la base de données avec `USE BlogDB`.
