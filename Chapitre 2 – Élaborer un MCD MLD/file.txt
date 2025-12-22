@@ -1,11 +1,11 @@
-MLD UTILISATEUR{
+MCD UTILISATEUR{
  id_user (PK),
  nom,
  email,
  mot_de_passe 
  }
 
-MLD ARTICLE{
+MCD ARTICLE{
 id_article (PK),
 titre,
 contenu,
@@ -13,7 +13,7 @@ date_pub,
 id_user (FK)
 }
 
-MLD COMMENTAIRE{
+MCD COMMENTAIRE{
  id_commentaire (PK),
  contenu,
  auteur,
